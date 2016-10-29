@@ -1,0 +1,34 @@
+{
+  "name": "nerdbox",
+  "version": "0.5.0",
+  "homepage": "https://github.com/mikepack/nerdbox",
+  "authors": [
+    "Mike Pack <mikepackdev@gmail.com>"
+  ],
+  "description": "Nerdbox is a fully-tested, simple lightbox designed for programmers.",
+  "main": [
+    "src/nerdbox.js",
+    "src/nerdbox.css"
+  ],
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "lightbox",
+    "modal",
+    "css",
+    "js",
+    "web"
+  ],
+  "license": "MIT",
+  "ignore": [
+    ".travis.yml",
+    "bower.json",
+    "MIT_LICENSE",
+    "testem.json",
+    "spec"
+  ],
+  "dependencies": {
+    "jquery": ">= 1.9.0"
+  }
+}
