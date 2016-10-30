@@ -1988,7 +1988,7 @@ article #loginform label {
     width: auto;
 }
 }
-
+/*
 #footer-middle {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2000,7 +2000,6 @@ article #loginform label {
   -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding: 0;
 }
 
 #footer-middle .footer-headline {
@@ -2024,4 +2023,4 @@ div#footer-top > div {
   -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
-}
+}*/

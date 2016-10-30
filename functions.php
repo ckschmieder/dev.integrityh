@@ -4,8 +4,18 @@
  * Main Functions File
  */
 
+
+function randj_scripts() {
+// Enqueue Bootstrap stylesheet
+	wp_enqueue_style( 'bootstrap-styles', get_template_directory_uri() . '/stylesheets/bootstrap.css' );
+	wp_enqueue_style( 'aafp-style', get_template_directory_uri() . '/builds/development/css/style.css', array(), null, 'screen' );
+}
+add_action( 'wp_enqueue_scripts', 'randj_scripts' );
+
+
 // Auto-install recommended plugins
 require_once "includes/tgm-plugin-activation/class-tgm-plugin-activation.php";
+
 
 // Functions, customizations, etc.
 include "includes/functions/utilities.php";
@@ -22,7 +32,6 @@ include "includes/functions/widgets.php";
 include "includes/functions/shortcodes.php";
 include "includes/functions/ui-elements.php";
 include "includes/functions/validation.php";
-
 
 if (class_exists('ReduxFramework')) {
   include_once "includes/redux/config.php";

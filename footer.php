@@ -6,16 +6,18 @@ global $integrity_house;
     <footer>
         <div id="bg-top">
             <div id="footer-top" class="container">
-                <div class="contact-top footer-section left">
-                    <h4 class="footer-headline">Contact Us</h4>
-                </div>
+                <div class="row">
+                    <div class="col-xs-4 footer-section left">
+                        <h4 class="footer-headline">Contact Us</h4>
+                    </div>
 
-                <div class="help-top footer-section">
-                    <h4 class="footer-headline">Get Help</h4>
-                </div>
+                    <div class="col-xs-4 footer-section">
+                        <h4 class="footer-headline">Get Help</h4>
+                    </div>
 
-                <div class="connect-top footer-section">
-                    <h4 class="footer-headline">Connect</h4>
+                    <div class="col-xs-4 footer-section">
+                        <h4 class="footer-headline">Connect</h4>
+                    </div>
                 </div>
             </div>
         </div> <!-- End bg-top -->
@@ -23,101 +25,105 @@ global $integrity_house;
         <div id="bg-middle">
             <div id="footer-middle" class="container">
 
-                <div class="contact-middle footer-inner left">
-                    
-                    <div class="bottom" id="">
-                        <div class="inner-contact" id="contact-newark">
-                            <strong>Newark Campus</strong>
+                <div class="row">
 
-                            <div itemscope itemtype="http://schema.org/Organization">
-                                <span itemprop="name">Integrity House, Inc.</span>
-                                <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                                    <span itemprop="streetAddress">103 Lincoln Park</span>
+                    <div class="col-xs-4 footer-inner left">
+                        
+                        <div class="bottom" id="">
+                            <div class="col-xs-6" id="contact-newark">
+
+                                <strong>Newark Campus</strong>
+
+                                <div itemscope itemtype="http://schema.org/Organization">
+                                    <span itemprop="name">Integrity House, Inc.</span>
+                                    <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                        <span itemprop="streetAddress">103 Lincoln Park</span>
+                                        <br>
+                                        <span itemprop="postOfficeBoxNumber">PO Box 510</span>
+                                        <br>
+                                        <span itemprop="addressLocality">Newark</span>,
+                                        <span itemprop="addressRegion">NJ</span>
+                                        <span itemprop="postalCode">07102</span>
+                                    </div>
                                     <br>
-                                    <span itemprop="postOfficeBoxNumber">PO Box 510</span>
+                                    Tel: <span itemprop="telephone">973-623-0600</span>
                                     <br>
-                                    <span itemprop="addressLocality">Newark</span>,
-                                    <span itemprop="addressRegion">NJ</span>
-                                    <span itemprop="postalCode">07102</span>
+                                    Fax: <span itemprop="faxNumber">973-623-1862</span>
                                 </div>
-                                <br>
-                                Tel: <span itemprop="telephone">973-623-0600</span>
-                                <br>
-                                Fax: <span itemprop="faxNumber">973-623-1862</span>
+                            </div>
+                            <div class="col-xs-6" id="contact-secaucus">
+                                <strong>Secaucus Campus</strong>
+
+                                <div itemscope itemtype="http://schema.org/Organization">
+                                    <meta itemprop="name" content="Integrity House, Inc. (Secaucus Campus)">
+                                    <div itemprop="address" itemscope itemtype="http://schema.org/Address">
+                                        <span itemprop="streetAddress">595 County Avenue</span>
+                                        <br>
+                                        <span itemprop="postOfficeBoxNumber">PO Box 2505</span>
+                                        <br>
+                                        <span itemprop="addressLocality">Secaucus</span>,
+                                        <span itemprop="addressRegion">NJ</span>
+                                        <span itemprop="postalCode">07096</span>
+                                        <br>
+                                    </div>
+                                    <br>
+                                    Tel: <span itemprop="telephone">201-583-7100</span>
+                                    <br>
+                                    Fax: <span itemprop="faxNumber">201-583-7114</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="inner-contact" id="contact-secaucus">
-                            <strong>Secaucus Campus</strong>
+                    </div>
+
+                    <div class="col-xs-4 footer-inner middle">
+                        
+                        <div class="bottom" id="hotlines">
+                        
+                            <div itemscope itemtype="http://schema.org/Organization">
+                                <meta itemprop="name" content="Admissions Department">
+                                Admissions
+                                &ndash;
+                                <a itemprop="telephone" href="tel://<?php echo $integrity_house['admissions']; ?>"><?php echo $integrity_house['admissions']; ?></a>
+                            </div>
 
                             <div itemscope itemtype="http://schema.org/Organization">
-                                <meta itemprop="name" content="Integrity House, Inc. (Secaucus Campus)">
-                                <div itemprop="address" itemscope itemtype="http://schema.org/Address">
-                                    <span itemprop="streetAddress">595 County Avenue</span>
-                                    <br>
-                                    <span itemprop="postOfficeBoxNumber">PO Box 2505</span>
-                                    <br>
-                                    <span itemprop="addressLocality">Secaucus</span>,
-                                    <span itemprop="addressRegion">NJ</span>
-                                    <span itemprop="postalCode">07096</span>
-                                    <br>
-                                </div>
-                                <br>
-                                Tel: <span itemprop="telephone">201-583-7100</span>
-                                <br>
-                                Fax: <span itemprop="faxNumber">201-583-7114</span>
+                                <meta itemprop="name" content="Narcotics Anonymous">
+                                NA Hotline
+                                &ndash;
+                                <a itemprop="telephone" href="tel://<?php echo $integrity_house['na_hotline']; ?>"><?php echo $integrity_house['na_hotline']; ?></a>
+                            </div>
+
+                            <div itemscope itemtype="http://schema.org/Organization">
+                                <meta itemprop="name" content="Alcoholics Anonymous">
+                                AA Hotline
+                                &ndash;
+                                <a itemprop="telephone" href="tel://<?php echo $integrity_house['aa_hotline']; ?>"><?php echo $integrity_house['aa_hotline']; ?></a>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="help-middle footer-inner middle">
-                    
-                    <div class="bottom" id="hotlines">
-                    
-                        <div itemscope itemtype="http://schema.org/Organization">
-                            <meta itemprop="name" content="Admissions Department">
-                            Admissions
-                            &ndash;
-                            <a itemprop="telephone" href="tel://<?php echo $integrity_house['admissions']; ?>"><?php echo $integrity_house['admissions']; ?></a>
-                        </div>
-
-                        <div itemscope itemtype="http://schema.org/Organization">
-                            <meta itemprop="name" content="Narcotics Anonymous">
-                            NA Hotline
-                            &ndash;
-                            <a itemprop="telephone" href="tel://<?php echo $integrity_house['na_hotline']; ?>"><?php echo $integrity_house['na_hotline']; ?></a>
-                        </div>
-
-                        <div itemscope itemtype="http://schema.org/Organization">
-                            <meta itemprop="name" content="Alcoholics Anonymous">
-                            AA Hotline
-                            &ndash;
-                            <a itemprop="telephone" href="tel://<?php echo $integrity_house['aa_hotline']; ?>"><?php echo $integrity_house['aa_hotline']; ?></a>
+                    <div id="careers-menu" class="col-xs-4 footer-inner right">
+                        
+                        <div class="bottom" id="">
+                        <?php
+                        wp_nav_menu(array(
+                            'theme_location' => 'careers_menu',
+                            'fallback_cb'    => false,
+                            'menu_class'     => 'footer-menu',
+                        ));
+                        ?>
+                        <?php
+                        wp_nav_menu(array(
+                            'theme_location' => 'login_menu',
+                            'fallback_cb'    => false,
+                            'menu_class'     => 'footer-menu',
+                        ));
+                        ?>
                         </div>
                     </div>
+
                 </div>
 
-                <div class="connect-middle footer-inner right" id="careers-menu">
-                    
-                    <div class="bottom" id="">
-                    <?php
-                    wp_nav_menu(array(
-                        'theme_location' => 'careers_menu',
-                        'fallback_cb'    => false,
-                        'menu_class'     => 'footer-menu',
-                    ));
-                    ?>
-                    <?php
-                    wp_nav_menu(array(
-                        'theme_location' => 'login_menu',
-                        'fallback_cb'    => false,
-                        'menu_class'     => 'footer-menu',
-                    ));
-                    ?>
-                    </div>
-                </div>
-
-                
             </div>
         </div> <!-- End bg-middle -->
         <div class="clearfix"></div>
