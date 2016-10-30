@@ -88,7 +88,7 @@ function ih_register_cpt_testimonial($post_types) {
     'labels'              => piklist('post_type_labels', 'Testimonial'),
     'title'               => 'Enter a Title...',
     'public'              => true,
-    'has_archive'         => false,
+    'has_archive'         => true,
     'menu_icon'           => 'dashicons-format-quote',
     'exclude_from_search' => true,
     'show_in_nav_menus'   => false,
@@ -97,7 +97,7 @@ function ih_register_cpt_testimonial($post_types) {
       'editor',
     ),
     'rewrite'             => array(
-      'slug' => 'testimonial',
+      'slug' => 'hope',
     ),
   );
 
