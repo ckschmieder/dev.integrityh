@@ -8,7 +8,7 @@
   <?php if ($thumb): ?>
     <div class="image">
       <a href="<?php echo $permalink; ?>">
-        <?php echo $thumb; ?>
+        <?php the_post_thumbnail('large') ?>
       </a>
     </div>
   <?php endif; ?>
@@ -26,6 +26,9 @@
         <br>
         <strong>Where:</strong> <?php echo $location; ?>
       </p>
+    </div>
+    <div class="summary">
+      <?php the_excerpt(); ?>
     </div>
   </div>
 </li>
