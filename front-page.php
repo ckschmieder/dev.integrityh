@@ -11,7 +11,7 @@ get_header(); ?>
           <div class="hero-area">
 
             <?php if (has_post_thumbnail()): ?>
-                <div class="hero-image"><?php the_post_thumbnail(); ?></div>
+                <div class="hero-image"><?php the_post_thumbnail('homepage-slider'); ?></div>
                 <?php endif; ?>
                 <div class="hero-content"><?php the_content(); ?></div>
 
@@ -66,6 +66,8 @@ get_header(); ?>
           </div>
         <?php endif; ?>
 
+        <div class="slider-area">
+
         <?php
         $news_cat     = get_term_by('slug', 'news-updates', 'category');
         $archive_link = get_category_link($news_cat->term_id);
@@ -88,6 +90,8 @@ get_header(); ?>
           'view_all_text' => 'View All News &raquo;',
         ));
         ?>
+
+        </div>
 
       </div> <!-- End main-content -->
 
