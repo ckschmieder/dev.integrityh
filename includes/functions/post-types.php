@@ -33,7 +33,7 @@ function ih_register_cpt_event($post_types) {
     'labels'        => piklist('post_type_labels', 'Event'),
     'title'         => 'Enter Event Title...',
     'public'        => true,
-    'has_archive'   => true,
+    'has_archive'   => false,
     'menu_icon'     => 'dashicons-calendar-alt',
     'hide_meta_box' => array(
       'author',

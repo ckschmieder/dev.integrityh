@@ -30,7 +30,7 @@ $args['page_slug']  = 'theme_options';
 $contact_info_html = <<<END_HTML
 <p>If you have any questions, please contact Fifth Room Creative:</p>
 <p>
-  <a href="mailto:info@fifthroomcreative.com">info@fifthroomcreative.com</a>
+  <a href="mailto:social@randjsc.com">social@randjsc.com</a>
   <br>
   <a href="tel://19735872000">(973) 587-2000</a>
 </p>
@@ -94,7 +94,7 @@ $sections[] = array(
       'title'    => 'Main Slider Max. Slides',
       'subtitle' => 'Load this many slides, at most, for the main homepage slider',
       'type'     => 'slider',
-      'desc'     => 'Min: 0, Max: 10',
+      'desc'     => 'Min: 1, Max: 10',
       'default'  => 5,
       'min'      => 0,
       'max'      => 10,
