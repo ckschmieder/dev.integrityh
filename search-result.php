@@ -14,7 +14,7 @@ $categories = get_the_category();
     </div>
   <?php endif; ?>
 
-  <div class="result-right">
+  <div class="result-right indent">
     <h2 class="search-result-title">
       <a href="<?php the_permalink(); ?>">
         <?php the_title(); ?>
