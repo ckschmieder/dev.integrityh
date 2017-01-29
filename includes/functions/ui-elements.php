@@ -14,7 +14,7 @@ function ih_content_slider(&$query, $params = array()) {
     </a>
   </div>
   <div class="content-slide-wrap" id="<?php echo $params['container_id']; ?>">
-    <!-- <a class="directional left" href="" title="Previous">&laquo;</a> -->
+    <a class="directional left" href="" title="Previous">&laquo;</a>
     <div
       id="<?php echo $params['slider_id']; ?>"
       class="slider"
@@ -48,7 +48,7 @@ function ih_content_slider(&$query, $params = array()) {
         <?php endwhile; ?>
       </ul>
     </div>
-    <!-- <a class="directional right" href="" title="Next">&raquo;</a> -->
+    <a class="directional right" href="" title="Next">&raquo;</a>
   </div>
 <?php
   wp_reset_postdata();
