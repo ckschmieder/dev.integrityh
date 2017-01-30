@@ -21,8 +21,9 @@ if (is_post_type_archive()) {
 <div class="wrapper">
   <div class="container">
     <div id="main-content">
-
-      <h1 class="page-title"><?php echo $title; ?></h1>
+      <header class="entry-header">
+        <h1 class="page-title"><?php echo $title; ?></h1>
+      </header>
 
       <?php if (have_posts()): ?>
         <ol class="search-results">

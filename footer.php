@@ -2,7 +2,38 @@
 global $integrity_house;
 ?>
 
-<div class="clearfix"></div>
+    <div class="clearfix"></div>
+
+    <footer id="colophon" class="site-footer" role="contentinfo">
+
+        <div class="widget-row">
+            <div id="footer-sidebar" class="content-wrap widget-wrap clearfix">
+                <div id="footer-sidebar1">
+                    <?php
+                    if(is_active_sidebar('footer-sidebar-1')){
+                    dynamic_sidebar('footer-sidebar-1');
+                    }
+                    ?>
+                </div>
+                <div id="footer-sidebar2">
+                    <?php
+                    if(is_active_sidebar('footer-sidebar-2')){
+                    dynamic_sidebar('footer-sidebar-2');
+                    }
+                    ?>
+                </div>
+                <div id="footer-sidebar3">
+                    <?php
+                    if(is_active_sidebar('footer-sidebar-3')){
+                    dynamic_sidebar('footer-sidebar-3');
+                    }
+                    ?>
+                </div>
+            </div>
+        </div>
+
+    </footer><!-- #colophon -->
+
     <footer>
         <div id="bg-top">
             <div id="footer-top">
@@ -19,7 +50,7 @@ global $integrity_house;
                 </div>
             </div> <!-- End footer-top -->
         </div> <!-- End bg-top -->
-    <div class="clearfix"></div>
+        <div class="clearfix"></div>
         <div id="bg-middle">
             <div id="footer-middle">
 
@@ -105,7 +136,7 @@ global $integrity_house;
                 </div>
             </div>
         </div> <!-- End bg-middle -->
-    <div class="clearfix"></div>
+        <div class="clearfix"></div>
 
         <div class="container created">
             <span>Created By</span>
