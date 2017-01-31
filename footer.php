@@ -4,7 +4,7 @@ global $integrity_house;
 
     <div class="clearfix"></div>
 
-    <footer id="colophon" class="site-footer" role="contentinfo">
+    <!-- <footer id="colophon" class="site-footer" role="contentinfo">
 
         <div class="widget-row">
             <div id="footer-sidebar" class="content-wrap widget-wrap clearfix">
@@ -32,7 +32,7 @@ global $integrity_house;
             </div>
         </div>
 
-    </footer><!-- #colophon -->
+    </footer> --><!-- #colophon -->
 
     <footer>
         <div id="bg-top">

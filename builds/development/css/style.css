@@ -1,0 +1,26 @@
+.event-thumb {
+    width: 220px;
+    height: auto;
+}
+
+.indent {
+	padding: 0 25px;
+}
+article {
+	padding: 0 25px!important;
+}
+h1.page-title {
+    margin: 1em 0 .5em!important;
+}
+
+#main-content h2 {
+	margin-bottom: 1em;
+}
+
+/* Events archive */
+.result {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
