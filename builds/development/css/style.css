@@ -1,3 +1,9 @@
+.content-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 .event-thumb {
     width: 220px;
     height: auto;
@@ -6,6 +12,7 @@
 .indent {
 	padding: 0 25px;
 }
+
 article {
 	padding: 0 25px!important;
 }

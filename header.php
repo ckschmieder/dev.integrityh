@@ -45,7 +45,7 @@ $theme_uri = get_stylesheet_directory_uri();
         src="<?php echo $theme_uri; ?>/vendor/requirejs/require.js"></script>
 </head>
 <body <?php body_class(); ?>>
-    <div class="wrapper">
+    <div class="container content-container">
 		<div class="header clearfix">
             <h1 class="logo">
                 <a href="<?php echo site_url('/'); ?>">Integrity House</a>
@@ -99,8 +99,8 @@ $theme_uri = get_stylesheet_directory_uri();
                         
                         
                     </div>
-		</div> <!-- End container -->
-    </div> <!-- End wrapper -->
+		</div> <!-- End  -->
+    </div> <!-- End container -->
 
 
 
