@@ -8,7 +8,7 @@
 function randj_scripts() {
 // Enqueue Bootstrap stylesheet
 	// wp_enqueue_style( 'bootstrap-styles', get_template_directory_uri() . '/stylesheets/bootstrap.css' );
-	wp_enqueue_style( 'aafp-style', get_template_directory_uri() . '/builds/development/css/style.css', array(), null, 'screen' );
+	wp_enqueue_style( 'randj_scripts', get_template_directory_uri() . '/builds/development/css/style.css' );
 }
 add_action( 'wp_enqueue_scripts', 'randj_scripts' );
 
