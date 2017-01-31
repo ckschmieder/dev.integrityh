@@ -16,7 +16,7 @@ global $integrity_house;
                 </div>
 
                 <div class="connect connect-top">
-                    <h4 class="footer-headline">Connect</h4>
+                    <h4 class="footer-headline">Careers</h4>
                 </div>
             </div> <!-- End footer-top -->
         </div> <!-- End bg-top -->

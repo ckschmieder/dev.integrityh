@@ -51,6 +51,12 @@ add_shortcode('team_member', function($atts, $content=null) {
   return ob_get_clean();
 });
 
+function ih_social_icons() {
+  $i = '<div class="social-mob">Success</div>';
+  return $i;
+}
+add_shortcode('ih-social-icons', 'ih_social_icons' );
+
 function ih_gallery_shortcode($atts) {
   extract(shortcode_atts(array(
     'id'    => null,

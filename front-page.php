@@ -5,7 +5,7 @@
 
 get_header(); ?>
 
-<div class="wrapper">
+<div class="wrapper content-container">
     
       <div id="main-content">
           <div class="hero-area">

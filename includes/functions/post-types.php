@@ -103,6 +103,33 @@ function ih_register_cpt_testimonial($post_types) {
 
   return $post_types;
 }
-add_filter('piklist_post_types', 'ih_register_cpt_testimonial');
+add_filter('piklist_post_types', 'ih_register_cpt_leadership');
+
+function ih_register_cpt_leadership($post_types) {
+  $post_types['event'] = array(
+    'labels'        => piklist('post_type_labels', 'Leadership'),
+    'title'         => 'Enter First and Last Name...',
+    'public'        => true,
+    'has_archive'   => true,
+    'menu_icon'     => 'dashicons-groups',
+    'hide_meta_box' => array(
+      'author',
+    ),
+    'rewrite'       => array(
+      'slug' => 'leadership',
+    ),
+    'supports'      => array(
+      'title',
+      'editor',
+      'thumbnail',
+    ),
+    'taxonomies'    => array(
+      'post_tag',
+    ),
+  );
+
+  return $post_types;
+}
+add_filter('piklist_post_types', 'ih_register_cpt_leadership');
 
 ?>

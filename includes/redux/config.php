@@ -145,6 +145,17 @@ $sections[] = array(
       'step'     => 1,
     ),
     array(
+      'id'       => 'news_slider_delay',
+      'title'    => 'News Slider Transition Delay',
+      'subtitle' => 'How many seconds to stay on each slide',
+      'type'     => 'slider',
+      'desc'     => 'Min: 2, Max: 30',
+      'default'  => 7,
+      'min'      => 2,
+      'max'      => 30,
+      'step'     => 1,
+    ),
+    array(
       'id'       => 'news_slider_animation_speed',
       'title'    => 'News Slider Animation Speed',
       'subtitle' => 'How long each slide transition takes, in milliseconds',
