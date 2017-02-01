@@ -28,6 +28,7 @@ function ih_register_cpt_gallery($post_types) {
 }
 add_filter('piklist_post_types', 'ih_register_cpt_gallery');
 
+
 function ih_register_cpt_event($post_types) {
   $post_types['event'] = array(
     'labels'        => piklist('post_type_labels', 'Event'),
@@ -54,6 +55,7 @@ function ih_register_cpt_event($post_types) {
   return $post_types;
 }
 add_filter('piklist_post_types', 'ih_register_cpt_event');
+
 
 function ih_register_cpt_job_listing($post_types) {
   $post_types['job_listing'] = array(
@@ -83,6 +85,7 @@ function ih_register_cpt_job_listing($post_types) {
 }
 add_filter('piklist_post_types', 'ih_register_cpt_job_listing');
 
+
 function ih_register_cpt_testimonial($post_types) {
   $post_types['testimonial'] = array(
     'labels'              => piklist('post_type_labels', 'Testimonial'),
@@ -106,7 +109,7 @@ function ih_register_cpt_testimonial($post_types) {
 add_filter('piklist_post_types', 'ih_register_cpt_testimonial');
 
 function ih_register_cpt_leadership($post_types) {
-  $post_types['event'] = array(
+  $post_types['leadership'] = array(
     'labels'        => piklist('post_type_labels', 'Leadership'),
     'title'         => 'Enter First and Last Name...',
     'public'        => true,
@@ -125,6 +128,7 @@ function ih_register_cpt_leadership($post_types) {
     ),
     'taxonomies'    => array(
       'post_tag',
+      'category',
     ),
   );
 
