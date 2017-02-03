@@ -5,31 +5,16 @@ global $integrity_house;
     <div class="clearfix"></div>
     
     <footer>
-        <div id="bg-top">
-            <div id="footer-top">
-                <div class="contact contact-top">
-                    <h4 class="footer-headline">Contact Us</h4>
-                </div>
-
-                <div class="help help-top">
-                    <h4 class="footer-headline">Get Help</h4>
-                </div>
-
-                <div class="connect connect-top">
-                    <h4 class="footer-headline">Careers</h4>
-                </div>
-            </div> <!-- End footer-top -->
-        </div> <!-- End bg-top -->
-        <div class="clearfix"></div>
         <div id="bg-middle">
             <div id="footer-middle">
 
-                <div class="contact contact-top">
+                <div class="contact contact-top footer-third">
+                    <div class="footer-title"><a href="#">Contact Us</a></div>
                     <div class="inner-contact" id="contact-newark">
-                        <strong>Newark Campus</strong>
+                        <strong>Integrity House Headquarters</strong>
 
                         <div itemscope itemtype="http://schema.org/Organization">
-                            <span itemprop="name">Integrity House, Inc.</span>
+                            <!-- <span itemprop="name">Integrity House, Inc.</span> -->
                             <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
                                 <span itemprop="streetAddress">103 Lincoln Park</span>
                                 <br>
@@ -40,9 +25,7 @@ global $integrity_house;
                                 <span itemprop="postalCode">07102</span>
                             </div>
                             <br>
-                            Tel: <span itemprop="telephone">973-623-0600</span>
-                            <br>
-                            Fax: <span itemprop="faxNumber">973-623-1862</span>
+                            Tel: <span itemprop="telephone">973-623-0600</span>                            
                         </div>
                     </div>
                     <div class="inner-contact" id="contact-secaucus">
@@ -68,7 +51,8 @@ global $integrity_house;
                     </div>
                 </div>
 
-                <div class="help help-middle">
+                <div class="help help-middle footer-third">
+                    <div class="footer-title"><a href="#">Get Help</a></div>
                     <h4 class="inner-help" id="hotlines">
                         <div itemscope itemtype="http://schema.org/Organization">
                             <meta itemprop="name" content="Narcotics Anonymous">
@@ -86,7 +70,8 @@ global $integrity_house;
                     </h4>
                 </div>
 
-                <div class="connect connect-middle" id="connect-links">
+                <div class="connect connect-middle footer-third" id="connect-links">
+                    <div class="footer-title"><a href="#">Connect</a></div>
                     <?php
                     wp_nav_menu(array(
                         'theme_location' => 'careers_menu',

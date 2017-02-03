@@ -54,3 +54,60 @@ h1.page-title {
     }
 
 }
+
+#footer-middle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.footer-third {
+    padding: 1.5em 25px!important;
+}
+
+.footer-title {
+    padding: 0;
+    margin-bottom: 1em;
+    font-size: 1.3em;
+    font-weight: bold;
+    line-height: 1;
+    width: 100%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+}
+.inner-help {
+    padding: 0!important;
+    width: 100%!important;
+
+}
+.inner-contact {
+    padding: 0!important;
+}
+footer .contact {
+    width: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+div#bg-middle::after {
+    content: "";
+    float: none;
+    display: block;
+    clear: both;
+}
+#bg-middle {
+    background-color: #159033;
+    color: white;
+}
+#connect-links a {
+    color: white;
+}
+#connect-links a:hover {
+    text-decoration: underline;
+}
