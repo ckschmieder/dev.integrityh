@@ -69,11 +69,11 @@ $theme_uri = get_stylesheet_directory_uri();
 
                 </div>
             </div><!-- End rightside -->
-            <div id="search" class="clearfix">
-                <?php get_search_form(); ?>
-            </div>
+
+
 		
     		<div class="container clearfix" id="main-navigation">
+
                 <?php
                 wp_nav_menu(array(
                     'theme_location' => 'main_nav',
@@ -84,21 +84,26 @@ $theme_uri = get_stylesheet_directory_uri();
                 ));
                 ?>
                 <div id="indicator"></div>
-                <div class="social-mob">
-                            <?php
-                            $is_email       = strpos($integrity_house['contact_email'], '@');
-                            $contact_href   = $is_email ? 'mailto:' : '';
-                            $contact_href  .= $integrity_house['contact_email'];
-                            ?>
-                            
-                            
-                                <a href="<?php echo $integrity_house['facebook']; ?>"><img src="<?php echo $theme_uri; ?>/images/facebook-icon.png"><span>Facebook</span></a>
-                            
-                            
-                                <a href="<?php echo $integrity_house['twitter']; ?>"><img src="<?php echo $theme_uri; ?>/images/twitter-icon.png"><span>Twitter</span></a>
-                            
-                            
-                        </div>
+                <div id="search" class="clearfix">
+                <?php get_search_form(); ?>
+                 <div class="social-mob">
+                    <?php
+                    $is_email       = strpos($integrity_house['contact_email'], '@');
+                    $contact_href   = $is_email ? 'mailto:' : '';
+                    $contact_href  .= $integrity_house['contact_email'];
+                    ?>
+                    
+                    
+                        <a href="<?php echo $integrity_house['facebook']; ?>"><img src="<?php echo $theme_uri; ?>/images/facebook-icon.png"><span>Facebook</span></a>
+                    
+                    
+                        <a href="<?php echo $integrity_house['twitter']; ?>"><img src="<?php echo $theme_uri; ?>/images/twitter-icon.png"><span>Twitter</span></a>
+                    
+                    
+                </div>
+            
+            </div>
+                
     		</div> <!-- End  -->
         </div>
     </div> <!-- End container -->

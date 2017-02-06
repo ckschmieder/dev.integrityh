@@ -9,7 +9,7 @@ global $integrity_house;
             <div id="footer-middle">
 
                 <div class="contact contact-top footer-third">
-                    <div class="footer-title"><a href="#">Contact Us</a></div>
+                    <div class="footer-title"><a href="/locations/">Contact Us</a></div>
                     <div class="inner-contact" id="contact-newark">
                         <strong>Integrity House Headquarters</strong>
 
@@ -25,7 +25,9 @@ global $integrity_house;
                                 <span itemprop="postalCode">07102</span>
                             </div>
                             <br>
-                            Tel: <span itemprop="telephone">973-623-0600</span>                            
+                            Tel: <span itemprop="telephone">973-623-0600</span>  
+                            <br>
+                            <a href="/locations/">Other Locations &raquo;</a>                          
                         </div>
                     </div>
                     <div class="inner-contact" id="contact-secaucus">
@@ -46,13 +48,13 @@ global $integrity_house;
                             <br>
                             Tel: <span itemprop="telephone">201-583-7100</span>
                             <br>
-                            Fax: <span itemprop="faxNumber">201-583-7114</span>
+                            Fax: <span itemprop="faxNumber">201-583-7114</span>                            
                         </div>
                     </div>
                 </div>
 
                 <div class="help help-middle footer-third">
-                    <div class="footer-title"><a href="#">Get Help</a></div>
+                    <div class="footer-title"><a href="/get-help/admissions/">Get Help</a></div>
                     <h4 class="inner-help" id="hotlines">
                         <div itemscope itemtype="http://schema.org/Organization">
                             <meta itemprop="name" content="Narcotics Anonymous">
@@ -71,7 +73,7 @@ global $integrity_house;
                 </div>
 
                 <div class="connect connect-middle footer-third" id="connect-links">
-                    <div class="footer-title"><a href="#">Connect</a></div>
+                    <div class="footer-title"><a href="/locations/">Connect</a></div>
                     <?php
                     wp_nav_menu(array(
                         'theme_location' => 'careers_menu',

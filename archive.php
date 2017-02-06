@@ -20,7 +20,7 @@ if (is_post_type_archive()) {
 
 <div class="wrapper">
   <div class="container">
-    <div id="main-content">
+    <div id="main-content archive">
       <header class="entry-header">
         <h1 class="page-title"><?php echo $title; ?></h1>
       </header>

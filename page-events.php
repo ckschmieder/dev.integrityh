@@ -11,7 +11,7 @@ get_header();
 
         <section class="upcoming-events">
           <div class="indent">
-            <h2>Upcomming Events</h2>
+            <h2 class="event-section-title">Upcomming Events</h2>
 
             <?php
             // The Query
@@ -74,7 +74,7 @@ get_header();
 
         <section class="upcoming-events">
           <div class="indent">
-            <h2>Past Events</h2>
+            <h2 class="event-section-title">Past Events</h2>
             
             <?php
             // The Query

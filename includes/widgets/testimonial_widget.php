@@ -63,7 +63,7 @@ class Testimonial_Widget extends WP_Widget {
     <div class="testimonial-name">
       <?php echo $citation; ?>
     </div>
-    <a href="#" class="sidebar-link">More Hope &raquo;</a>
+    <a href="/our-impact-2/client-success-stories/" class="sidebar-link">Client Success Stories &raquo;</a>
 <?php
     echo $args['after_widget'];
     wp_reset_postdata();
