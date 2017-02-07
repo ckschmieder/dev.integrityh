@@ -12,6 +12,12 @@ $categories = get_the_category();
         <img src="<?php echo $thumb[0]; ?>" class="search-thumb" alt="<?php echo esc_attr(get_the_title()); ?>">
       </a>
     </div>
+  <?php elseif (!has_post_thumbnail()): ?>
+    <div class="thumbnail">
+      <a href="<?php the_permalink(); ?>">
+        <img src="http://dev.integrityhouse.org/wp-content/uploads/2014/02/About-History-photo.jpg">
+      </a>
+    </div>
   <?php endif; ?>
 
   <div class="result-right">
@@ -28,8 +34,11 @@ $categories = get_the_category();
         </span>
       <?php endif; ?>
 
-      <span class="date">
+      <!-- <span class="date">
         <?php the_date(null, '<span class="fa fa-clock-o"></span>&nbsp;'); ?>
+      </span> -->
+      <span class="date">
+      <span class="fa fa-calendar" aria-hidden="true">&nbsp;<span class="date-text"><?php the_field('start_date'); ?></span>
       </span>
     </div>
 

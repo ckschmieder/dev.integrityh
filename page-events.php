@@ -19,7 +19,7 @@ get_header();
             $events_query = new WP_Query(array(
               'post_type'      => 'event',
               'post_status'    => 'publish',
-              'posts_per_page' => 3,
+              'posts_per_page' => -1,
               'order'          => 'ASC',
               'orderby'        => 'meta_value',
               'meta_key'       => 'start_date',
@@ -82,7 +82,7 @@ get_header();
             $events_query = new WP_Query(array(
               'post_type'      => 'event',
               'post_status'    => 'publish',
-              'posts_per_page' => 3,
+              'posts_per_page' => -1,
               'order'          => 'ASC',
               'orderby'        => 'meta_value',
               'meta_key'       => 'start_date',

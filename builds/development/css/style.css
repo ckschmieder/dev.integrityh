@@ -33,6 +33,28 @@ h1.page-title {
     margin-bottom: 2em;
 }
 
+/*Make sure thumbnail is correct size*/
+li.result .thumbnail img {
+    max-width: 210px;
+    max-height: 144px;
+}
+.result .post-info {
+    margin-top: .2em;
+}
+span.date-text {
+    font-size: 1.1em;
+    font-family: "Helvetica", Helvetica, Arial, sans-serif;
+    padding-left: .4em;
+    vertical-align: middle;
+}
+.result .post-excerpt {
+    padding: .7em 0 .4em;
+}
+.result .post-excerpt p {
+    line-height: 1.5;
+}
+
+
 .header {
     margin: 0;
     padding: 1.2em 25px;
