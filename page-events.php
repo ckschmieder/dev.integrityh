@@ -43,18 +43,9 @@ get_header();
                 ?>
 
                 <div class="event-wrap">
-                  <!-- <?php
-                  if (has_post_thumbnail()): ?>
-                    <div class="event-thumb"><?php the_post_thumbnail('event-thumbnail'); ?></div>
-                  <?php endif; ?> -->
 
-                  <!-- <div class="event-info"> -->
-
-                    <!-- <?php the_title( '<h3 class="event-title">', '</h3>' );?> -->
-                    <!-- <?php the_excerpt( '<p class="event-description">', '</p>' );?> -->
                     <?php get_template_part('search-result'); ?>
 
-                  <!-- </div> -->
 
                   <?php
 
@@ -83,7 +74,7 @@ get_header();
               'post_type'      => 'event',
               'post_status'    => 'publish',
               'posts_per_page' => -1,
-              'order'          => 'ASC',
+              'order'          => 'DESC',
               'orderby'        => 'meta_value',
               'meta_key'       => 'start_date',
               'meta_query'     => array(
@@ -106,18 +97,8 @@ get_header();
                 ?>
                 
                <div class="event-wrap">
-                  <!-- <?php
-                  if (has_post_thumbnail()): ?>
-                    <div class="event-thumb"><?php the_post_thumbnail('event-thumbnail'); ?></div>
-                  <?php endif; ?> -->
-
-                  <!-- <div class="event-info"> -->
-
-                    <!-- <?php the_title( '<h3 class="event-title">', '</h3>' );?> -->
-                    <!-- <?php the_excerpt( '<p class="event-description">', '</p>' );?> -->
+                  
                     <?php get_template_part('search-result'); ?>
-
-                  <!-- </div> -->
 
                   <?php
 
